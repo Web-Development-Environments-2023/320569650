@@ -48,6 +48,12 @@
 	font-weight: bold;
 	padding: 10px;
 }
+#like{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+}
 #whitebeard_photos{
 	justify-items: center;
 	align-items: center;
