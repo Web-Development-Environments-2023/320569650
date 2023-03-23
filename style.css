@@ -23,6 +23,7 @@
 }
 #whitebeard_logo{
 	float: right;
+	position: relative;
 }
 #about{
 	text-align: center;
