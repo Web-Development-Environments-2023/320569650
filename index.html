@@ -3,35 +3,35 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
+<body style="background-color: azure;">
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<a href="#about">About Me</a>
+<a href="#photos">My Photos</a>
+<a href="#playlist">My Playlist</a>
+<a href="#like">Like</a>
+<a href="#qrcoder">QR code</a>
+<a href="#spa">Q&A</a>
+<a href="#contact">Contact Me</a>
+<div id="whitebeard_logo">
+  <img src="photos/Flag_of_the_Whitebeard_Pirates.jpg" width="60px" height="48px" />
 </div>
-		  
+</div>
+<section id="first" class="section">
+  <h1><u>RIP Edward Newgate</u></h1>
+<img src="photos/whitebeard_tombstone.png" height="500px" width="500px"/>
+</section>
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
+
+<div class="underline_location">
+  <h2>About Me</h2>
+  <img src="photos/underline2.png" height=100px width=600px />
+</div>
+<p>Edward Newgate, more commonly known as "Whitebeard", was the captain of the Whitebeard Pirates and was widely known as the "Strongest Man in the World" and, after Gol D. Roger's death, the "Man Closest to One Piece".</p>
+<p>In his prime, Whitebeard was a rival to Gol D. Roger, and following Roger's death, was widely recognized as the strongest man in the world, a fact complimented by having the highest active bounty whilst alive, and the second highest bounty of any pirate in history.</p>
 <br/>
 <br/>
 <br/>
@@ -42,6 +42,26 @@ about me
 <br/>
 <br/>
 <br/>
+<div class="underline_location">
+  <h2>My Photos</h2>
+  <img src="photos/underline2.png" height=100px width=600px />
+</div>
+<br/>
+<br/>
+<br/>
+  <section id="whitebeard_photos">
+    <img class ="whitebeardPhotos" src="photos/Whitebeard1.png"/>
+    <img class ="whitebeardPhotos" src="photos/Whitebeard2.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard3.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard4.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard5.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard6.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard7.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard8.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard9.png"/>
+    <img class ="whitebeardPhotos" src="photos/whitebeard10.png"/>
+  </section>
+
 <br/>
 <br/>
 <br/>
@@ -51,10 +71,6 @@ about me
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-my photos
 <br/>
 <br/>
 <br/>
@@ -65,6 +81,11 @@ my photos
 <br/>
 <br/>
 <br/>
+<div class="underline_location">
+  <h2>My Playlist</h2>
+  <img src="photos/underline2.png" height=100px width=600px />
+</div>
+<iframe width="956" height="538" src="https://www.youtube.com/embed/7b7codxA_Lk" title="White Beard against The World「AMV」60FPS - One Piece (Reupload)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
 <br/>
 <br/>
 <br/>
@@ -76,8 +97,6 @@ my photos
 <br/>
 <br/>
 <br/>
-<br/>
-my playlist
 <br/>
 <br/>
 <br/>
@@ -93,8 +112,14 @@ my playlist
 <br/>
 <br/>
 <br/>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="6YNkti4Q"></script>
+  <!-- Your like button code -->
+  <div class="fb-like" data-href="C:/Users/Busak/github-classroom/Web-Development-Environments-2023/320569650/index.html" data-width="40" data-layout="" data-action="" data-size="" data-share="false"></div>
 <br/>
-<br/>
+<iframe src="https://www.facebook.com/plugins/like.php?href=file%3A%2F%2F%2FC%3A%2FUsers%2FBusak%2Fgithub-classroom%2FWeb-Development-Environments-2023%2F320569650%2Findex.html&width=40&layout&action&size&share=false&height=35&appId" width="40" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 <br/>
 <br/>
 <br/>
@@ -174,8 +199,6 @@ contact me
 <br/>
 <br/>
 </section>
-
-
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
