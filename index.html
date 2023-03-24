@@ -4,9 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.rawgit.com/mervick/emojionearea/master/dist/emojionearea.min.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/mervick/emojionearea/master/dist/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css"/>
 </head>
 <body style="background-color: azure;">
   
@@ -276,7 +274,9 @@
     <input type="text" id="subject" name="subject" placeholder="Subject" required >
     <br/>
     <label for="message">Message</label><br/>
-    <textarea name="body" id="message" placeholder="Write something..." style="height:150px" required></textarea>
+    <textarea name="body" id="text" placeholder="Write something..." style="height:150px" required></textarea>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
     </br>
     <button type="submit" value="Submit">Submit</button>
   </form>
@@ -290,8 +290,8 @@
 </section>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    $("#message").emojioneArea();
+  $("#text").emojioneArea({
+    pickerPosition:'top'
   });
 </script>
 <br/>
@@ -310,6 +310,7 @@
 <br/>
 <br/>
 </section>
+
 <script type="text/javascript">
   $(document).ready(function() {
     $("#message").emojioneArea();
